@@ -1,0 +1,32 @@
+<nav>
+  <div class="buttons">
+      <button type="button" (click)="goDash()">Dashboard</button>
+      <button type="button" (click)="goCupboard()">Edit Cupboard</button>
+      <span></span>
+      <button type="button" (click)="goBack()">Back</button>
+      <button type="button" (click)="logOut()">Log Out</button>
+  </div>
+</nav>
+<div class="total-container">
+  <h1>&#10084; Cupboard &#10084;</h1>
+
+  <div class="make-need">
+    <input type="text" placeholder="Enter new need name:" id="new-need" #needName />
+    <button type="button" (click)="add(needName.value); needName.value=''">Add need</button>
+  </div>
+  
+
+  <div class="need-grid" *ngFor="let need of needs">
+    <div class="need">
+      <button type="button" class="press" (click)="press(need)">
+        {{need.name}}
+        <br>
+        Cost: {{need.cost}}, Quantity: {{need.quantity}}, Type: {{need.type}}
+      </button>
+      
+      <button type="button" class="delete" title="delete need"
+      (click)="delete(need)">x</button>
+    </div>
+  </div>
+</div>
+<!-- <app-need-detail [need]="selectedNeed"></app-need-detail> -->

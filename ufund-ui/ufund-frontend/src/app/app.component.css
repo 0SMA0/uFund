@@ -1,0 +1,90 @@
+.top-component {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.top-component > h1 {
+  color:#c5173b;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 60px;
+  margin: auto;
+  margin-left: 25px;
+}
+
+.top-component > button {
+  background-color:  #f9c9d3;
+  color:#c5173b;
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 60px;
+  margin: auto;
+  margin-right: 25px;
+}
+
+.top-component > button:hover {
+  background-color:  #f9c9d3;
+  color:#700d21;
+  border: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 60px;
+  margin: auto;
+  margin-right: 25px;
+}
+
+
+/* button {
+    background-color: #eee;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  } */
+
+
+
+/* h1 {
+    margin-bottom: 0;
+  }
+  nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;    
+  }
+  
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  nav a:active {
+    background-color: black;
+  }
+  .logOut {
+    float: right;
+    margin-right: 100px;
+  }
+   */

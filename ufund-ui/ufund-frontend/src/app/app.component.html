@@ -1,0 +1,16 @@
+<div class="top-component">
+    <h1>{{title}}</h1>
+    <button type="button" (click)="goAbout()">&#10084;</button>
+</div>
+
+<!-- <nav *ngIf ="ifNav()">
+
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/needs">Cupboard</a>
+    <a routerLink="/funding-basket">Funding Basket</a>
+    <div class="logOut">
+        <a routerLink="/login">Log Out</a>
+    </div>
+</nav> -->
+<router-outlet></router-outlet>
+<!-- <app-messages></app-messages> -->

@@ -1,0 +1,12 @@
+<div *ngIf="need">
+  <h2>{{need.name | uppercase}} Details</h2>
+  <div><span>Cost: </span>{{need.name}}</div>
+  <div>
+    <span>Cost: </span>{{need.cost}}
+    <br>
+    <span>Quantity: </span>{{need.quantity}}
+    <br>
+    <span>Type: </span>{{need.type}}
+  </div>
+</div>
+<button type="'button" (click)="goBack()">go back</button>

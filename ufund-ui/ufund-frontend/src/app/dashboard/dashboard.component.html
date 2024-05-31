@@ -1,0 +1,24 @@
+<nav>
+  <div class="buttons">
+      <button type="button" (click)="goDash()">Dashboard</button>
+      <button type="button" (click)="goCupboard()">Edit Cupboard</button>
+      <span></span>
+      <button type="button" (click)="goBack()">Back</button>
+      <button type="button" (click)="logOut()">Log Out</button>
+  </div>
+</nav>
+
+<div class="total-container">
+  <h1>&#10084; Dashboard &#10084;</h1>
+  <div class="info">
+    <h2>Top Needs</h2>
+    <div class="needs-menu">
+      <a *ngFor="let need of needs"
+            routerLink="/detail/{{need.name}}">
+        {{need.name}}
+      </a>
+    </div>
+  </div>
+  <app-need-search></app-need-search>
+</div>
+

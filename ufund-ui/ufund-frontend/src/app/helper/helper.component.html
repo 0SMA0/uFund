@@ -1,0 +1,25 @@
+<nav>
+    <div class="buttons">
+        <button type="button" (click)="goDash()">Dashboard</button>
+        <button type="button" (click)="goFund()">Funding Basket</button>
+        <span></span>
+        <button type="button" (click)="goBack()">Back</button>
+        <button type="button" (click)="logOut()">Log Out</button>
+    </div>
+
+    <!-- top needs & the advertising stuff will be here -->
+</nav>
+
+<div class="total-container">
+    <h1>&#10084; Dashboard &#10084;</h1>
+    <div class="info">
+      <h2>Top Needs</h2>
+      <div class="top-needs">
+        <a *ngFor="let need of needs"
+              routerLink="/helperdetail/{{need.name}}">
+          {{need.name}}
+        </a>
+      </div>
+    </div>
+    <app-need-search [searchRouterLink]="'/helperdetail'"></app-need-search>
+  </div>

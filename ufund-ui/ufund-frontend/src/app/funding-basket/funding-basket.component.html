@@ -1,0 +1,44 @@
+<nav>
+  <div class="buttons">
+      <button type="button" (click)="goDash()">Dashboard</button>
+      <button type="button" (click)="goFund()">Funding Basket</button>
+      <span></span>
+      <button type="button" (click)="checkOut()">Check Out</button>
+      <button id="fundDisplay" type="button">Funds for this Session: 0</button>
+      <button type="button" (click)="goBack()">Back</button>
+      <button type="button" (click)="logOut()">Log Out</button>
+  </div>
+</nav>
+
+<!-- Cupboard & Funding Basket -->
+<div class="total-container">
+  <h1>&#10084; Funding Basket &#10084;</h1>
+  <div class="titles">
+    <h2>Cupboard</h2>
+    <h2>Funding Basket</h2>
+  </div>
+  <div class="total-flex">
+    <div class="cupboard">
+        <ul class="needs">
+          <button *ngFor="let need of needs" type="button" class="cupNeed" (click)="addNeed(need)">
+              {{need.name}}
+              <br>
+              Cost: {{need.cost}}, Quantity: {{need.quantity}}, Type: {{need.type}}
+          </button>
+        </ul>
+      </div>
+    <div class="funding-basket">
+      <ul class="needs"> 
+        <!-- <a *ngFor="let need of needs"
+              routerLink="/helperdetail/{{need.name}}">
+          {{need.name}}
+        </a> -->
+        <div *ngFor="let need of fundingBasket | keyvalue, async" class="need">          
+          <button type="button" (click)="goDetail(need.key)" class="needTitle">{{need.key}}</button>
+          <button type="button" class="delete" title="delete need" class="needDelete" (click)="removeNeed(need)">x</button>
+        </div>  
+      </ul>
+  
+    </div> 
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.info-container {
+    display: block;
+}
+
+.info-container > h1, p {
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    margin: auto;
+    width: 25%;
+}

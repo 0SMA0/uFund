@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1>Welcome!</h1>
+    <div class="input">
+        <input type="text" placeholder="Enter Username:" id="username" #usernameInput />
+    </div>
+
+    <br>
+
+    <div class="buttons">
+        <button type="button" class="add-button" (click) = "goDash(usernameInput.value)"> Login </button>
+        <button type="button" class="add-button" (click) = "create(usernameInput.value)"> Create </button>
+    </div>
+    <div class="messages">
+        <p id="message"></p>
+    </div>
+    <!-- <button type="button" class="add-button" (click) = "createAccount(usernameInput.value)"> Create Account </button> -->
+</div>
